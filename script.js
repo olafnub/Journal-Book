@@ -14,6 +14,8 @@ document.forms[0].reset();
 console.warn('added', {diaries});
 let pre=document.querySelector('#msg pre');
 pre.textContent = '\n' + JSON.stringify(diaries, '\t', 2);
+
+localStorage.setItem('JournalDocuments', JSON.stringify(diaries));
 }
 document.addEventListener('DOMContentLoaded', ()=> {
     document.getElementById('createButton').addEventListener('click', addDiary);
