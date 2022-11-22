@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
 
-    <div class="head-box">
+    <form>
+
+    <div class="formBox">
     <h2>Welcome to your library</h2>
-   
-    <div class="text-around">
-    <textarea id="txt" rows="3" placeholder="Adjust to liking"></textarea>
-    <button class="create">Create</button>
     </div>
+    <div class="formBox">
+    <input type="text" id="diaryTitle" placeholder="Title"></input>
     </div>
-    
-   
-    <!-- <ul>
-    <li><a href="11-18-2022.html">11-18-2022</a></li>
-    
-    
-    </ul> -->
+    <div class="formBox">
+    <input type="text" id="txt" rows="3" placeholder="Adjust to liking"></textarea>
+    </div>
+    <div class="formBox">
+    <button id="createButton">Create</button>
+    </div>
+    <div id="msg">
+        <pre></pre>
+    </div>
 
-
+    </form>
 </body>
 </html>
