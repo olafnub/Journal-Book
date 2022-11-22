@@ -5,6 +5,12 @@ body {
     /* background-color: black; */
     gap: 2em;
 }
+@media screen and (max-width: 600px) {
+    #txt {
+        max-width: 350px;
+        max-height: 800px;
+    }
+}
 
 #txt {
     min-width: 300px;
