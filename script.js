@@ -28,11 +28,13 @@ let andThis = "";
 for (let i = 0; i < 10; i++) {
 addThis = i + "Olafs";
 andThis = i + "Newbs";
-// const createValue = localStorage.setItem(addThis, andThis);
+const createValue = localStorage.setItem(addThis, andThis);
 
 }
-const keyThis = localStorage.key(0);
-const keyOf = localStorage.getItem(keyThis);
-document.getElementById('listOfJournals').innerHTML += `${keyOf}`;
-// listOf += `${keyOf}`;
+for (let i = 0; i < 5; i++) {
+    const keyThis = localStorage.key(i);
+    const keyOf = localStorage.getItem(keyThis);
+document.getElementById('listOfJournals').innerHTML += `${keyOf} <br>`;
+
+}
 }
