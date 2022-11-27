@@ -21,7 +21,7 @@
 // document.addEventListener('DOMContentLoaded', ()=> {
 //     document.getElementById('createButton').addEventListener('click', addDiary);
 // })
-
+window.onload = function() {
 let addThis = "";
 let andThis = "";
 
@@ -31,5 +31,8 @@ andThis = i + "Newbs";
 // const createValue = localStorage.setItem(addThis, andThis);
 
 }
-let listOf = document.getElementById('listOfJournals');
-listOf.textContent = localStorage.key(1);
+const keyThis = localStorage.key(0);
+const keyOf = localStorage.getItem(keyThis);
+document.getElementById('listOfJournals').innerHTML += `${keyOf}`;
+// listOf += `${keyOf}`;
+}
