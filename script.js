@@ -13,7 +13,7 @@ document.forms[0].reset();
 
 console.warn('added', {diaries});
 let pre=document.querySelector('#msg pre');
-pre.textContent = '\n' + JSON.stringify(diaries, '\t', 2);
+pre.textContent = diary.titles + " has been added";
 
 localStorage.setItem('JournalDocuments', JSON.stringify(diaries));
 }
