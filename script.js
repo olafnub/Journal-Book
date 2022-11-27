@@ -31,10 +31,14 @@ andThis = i + "Newbs";
 const createValue = localStorage.setItem(addThis, andThis);
 
 }
-for (let i = 0; i < 5; i++) {
-    const keyThis = localStorage.key(i);
+for (let t = 0; t < localStorage.length; t++) {
+    const keyThis = localStorage.key(t);
     const keyOf = localStorage.getItem(keyThis);
 document.getElementById('listOfJournals').innerHTML += `${keyOf} <br>`;
 
 }
+let tryThis = localStorage.key(0);
+let tryThisAlso = localStorage.getItem(tryThis);
+
+alert(tryThis +" " +  tryThisAlso);
 }
