@@ -10,26 +10,35 @@
 </head>
 <body>
 
+    <ul id="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href='library.html'>Library</a></li>
+        <li><a href='reads.html'>Reads</a></li>
+    </ul>
+
     <form>
 
     <div class="formBox">
     <h2>Welcome to your library</h2>
     </div>
+
+    <div class="header">
     <div class="formBox">
     <input type="text" id="diaryTitle" placeholder="Title"></input>
     </div>
     <div class="formBox">
     <textarea type="text" id="txt" rows="3" placeholder="Adjust to liking"></textarea>
-    </div>
-    <div class="formBox">
     <button id="createButton">Create</button>
+    
+</div>
     </div>
+    
     </form>
     <div class="submitBox">
-        <p>Submission Box</p>
+        <p style="font-weight: 500">Submission Log</p>
     <div class="imbedded">
         <div id="msg">
-            <pre></pre>
+            <pre>... has been added</pre>
         </div>
     </div>
     </div>
