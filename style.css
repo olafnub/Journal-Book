@@ -9,6 +9,18 @@ body {
     }
 }
 
+/* #links {
+    font-size: 40px;
+    list-style: none;
+    text-decoration: none;
+}
+#links li {
+    margin-bottom: 20px;
+}
+#links li:hover {
+    font-size: 55px;
+} */
+
 #txt {
     min-width: 300px;
     min-height: 100px;
