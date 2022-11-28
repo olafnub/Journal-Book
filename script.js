@@ -34,6 +34,16 @@ localStorage.setItem(diary.titles, JSON.stringify(diaries));
 document.addEventListener('DOMContentLoaded', ()=> {
     document.getElementById('createButton').addEventListener('click', addDiary);
 })
-
+if (localStorage != 0) {
+window.onload = function() {
+for(let j=0; j<localStorage.length;j++) {
+    let local_Key = localStorage.key(j);
+    let local_Get = JSON.parse(localStorage.getItem(local_Key).titles);
 let setJournalName = document.getElementById('listOfJournals').innerHTML;
-setJournalName = diary.id;
+setJournalName += local_Get;
+}
+}
+} else {
+    // setJournalName = ''
+    alert('hi');
+}
